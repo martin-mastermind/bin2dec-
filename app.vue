@@ -23,11 +23,16 @@ useHead({
   --primary: #400060;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   background: var(--background);
   color: var(--text);
   font-family: "Roboto", sans-serif;
   margin: 0;
+  overflow: hidden;
 }
 </style>

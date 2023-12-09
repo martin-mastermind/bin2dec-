@@ -1,8 +1,8 @@
 <template>
-  <section>
+  <section class="index">
     <NuxtLazyHydrate when-idle>
       <MainInput v-model="binaryInput" />
-      <!-- Result span: get input, transform to result, show result -->
+      <LazyMainResult v-if="binaryInput" :binarish-string="binaryInput" />
     </NuxtLazyHydrate>
   </section>
 </template>
@@ -11,4 +11,13 @@
 const binaryInput = ref("");
 </script>
 
-<style></style>
+<style scoped>
+.index {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+</style>
