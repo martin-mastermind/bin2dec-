@@ -1,7 +1,7 @@
 <template>
   <section class="main-result">
     <span v-if="isBinary" class="main-result__text">
-      Decimal variation: <b>{{ decimal }}</b>
+      Entered binary in decimal: <b>{{ decimal }}</b>
     </span>
     <span v-else class="main-result__error">Entered string isn't binary</span>
   </section>
