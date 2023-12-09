@@ -7,7 +7,7 @@
       maxlength="8"
       @keydown.prevent="handleKeydown"
     />
-    <span>Enter binary string</span>
+    <label for="binary-input">Enter binary string</label>
   </div>
 </template>
 
@@ -73,7 +73,7 @@ const handleKeydown = (event: KeyboardEvent) => {
     }
   }
 
-  span {
+  label {
     position: absolute;
     top: 10px;
     left: 14px;
