@@ -13,3 +13,21 @@ useHead({
   },
 });
 </script>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --text: #ffffff;
+  --background: #1c1c1c;
+  --primary: #400060;
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+</style>

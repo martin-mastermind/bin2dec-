@@ -1,11 +1,14 @@
 <template>
-  <div>
+  <section>
     <NuxtLazyHydrate when-idle>
-      <p @click="console.log('hello!')">Nuxt module playground!</p>
+      <MainInput v-model="binaryInput" />
+      <!-- Result span: get input, transform to result, show result -->
     </NuxtLazyHydrate>
-  </div>
+  </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const binaryInput = ref("");
+</script>
 
 <style></style>
